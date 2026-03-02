@@ -1,122 +1,173 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Geode SDK",
+  "theme": "aspen",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3b82f6",
+    "light": "#60a5fa",
+    "dark": "#1e40af"
   },
-  "favicon": "/favicon.svg",
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/geode-sdk/docs"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/geode-sdk/docs",
+      "discord": "https://discord.gg/9e43WMKzhp"
+    }
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Introduction",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "introduction",
+              "why-geode"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Getting Started",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "getting-started/prerequisites",
+              "getting-started/geode-cli",
+              "getting-started/sdk",
+              "getting-started/create-mod",
+              "getting-started/ide-setup",
+              "getting-started/cpp-stuff",
+              "getting-started/what-next"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Tutorials",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "tutorials/overview",
+              "tutorials/modify",
+              "tutorials/buttons",
+              "tutorials/fields",
+              "tutorials/events",
+              "tutorials/logging",
+              "tutorials/popup",
+              "tutorials/layouts",
+              "tutorials/positioning",
+              "tutorials/nodetree",
+              "tutorials/image-loading",
+              "tutorials/fetch",
+              "tutorials/async",
+              "tutorials/tasks",
+              "tutorials/coroutines",
+              "tutorials/memory",
+              "tutorials/casting",
+              "tutorials/utils",
+              "tutorials/hookpriority",
+              "tutorials/touchpriority",
+              "tutorials/manualhooks"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Mods",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "mods/overview",
+              "mods/configuring",
+              "mods/settings",
+              "mods/dependencies",
+              "mods/resources",
+              "mods/savedata",
+              "mods/md-files",
+              "mods/publishing",
+              "mods/guidelines"
+            ]
+          },
+          {
+            "group": "Migration Guides",
+            "pages": [
+              "migration/overview",
+              "migration/migrate-v4",
+              "migration/migrate-v5",
+              "migration/migrating",
+              "migration/modify-geode"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/dictionary"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Handbook",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Introduction",
             "pages": [
-              "api-reference/introduction"
+              "handbook/overview",
+              "handbook/chap0"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Volume 1: Basics",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "handbook/vol1/overview",
+              "handbook/vol1/chap1_1",
+              "handbook/vol1/chap1_2",
+              "handbook/vol1/chap1_3",
+              "handbook/vol1/chap1_4",
+              "handbook/vol1/chap1_5",
+              "handbook/vol1/chap1_6",
+              "handbook/vol1/chap1_7"
+            ]
+          },
+          {
+            "group": "Volume 2: Intermediate",
+            "pages": [
+              "handbook/vol2/overview",
+              "handbook/vol2/chap2_1",
+              "handbook/vol2/chap2_2",
+              "handbook/vol2/chap2_3",
+              "handbook/vol2/chap2_4",
+              "handbook/vol2/chap2_5",
+              "handbook/vol2/chap2_6"
+            ]
+          },
+          {
+            "group": "Volume 4: Advanced",
+            "pages": [
+              "handbook/vol4/overview"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "C++ Resources",
+        "groups": [
+          {
+            "group": "C++ Tutorials",
+            "pages": [
+              "cpp/overview",
+              "cpp/declarations",
+              "cpp/tips"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Miscellaneous",
+        "groups": [
+          {
+            "group": "Platform-Specific",
+            "pages": [
+              "misc/ios"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    ]
   }
 }

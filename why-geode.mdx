@@ -1,0 +1,76 @@
+---
+title: Why Geode?
+description: Discover how Geode solves traditional modding problems and provides a better development experience
+---
+
+# Why use Geode?
+
+The main goal of Geode is to **end mod incompatibility**. Traditional modding leads very easily to compatibility problems, many of which Geode attempts to address with better solutions.
+
+## The problem with traditional modding
+
+Traditional mod loaders for Geometry Dash simply inject DLLs and leave developers to handle everything else. This approach leads to several issues:
+
+- **Mod incompatibility**: Mods frequently conflict with each other, causing crashes or unexpected behavior
+- **Complex setup**: Developers need to manually manage hooks, often across multiple source files
+- **Poor ergonomics**: Working with calling conventions, trampolines, and manual hook setup is tedious and error-prone
+- **Inconsistent user experience**: Each mod may have different installation and configuration methods
+
+## How Geode solves these problems
+
+### Comprehensive mod management
+
+Geode doesn't just inject DLLs—it actively manages loaded mods and hooks. This ensures that mods work together harmoniously and provides a consistent experience for both developers and users.
+
+### Better development ergonomics
+
+Perhaps more interestingly, **Geode provides much better ergonomics for modding**. Instead of having to deal with:
+
+- Calling conventions
+- Trampolines
+- Manually setting hooks (likely in another source file)
+
+You can have all the code relevant to hooks in a [nice, clean, readable syntax](/tutorials/modify) contained within a single source file.
+
+<Note>
+Geode's hook syntax is designed to be intuitive and maintainable, significantly reducing the complexity of mod development.
+</Note>
+
+### Built for developers and users
+
+<CardGroup cols={2}>
+  <Card title="For developers" icon="code">
+    - Easy development with clean APIs
+    - Cross-platform portability
+    - Simplified hook management
+    - Modern C++ development experience
+  </Card>
+  
+  <Card title="For end users" icon="users">
+    - Uniform mod installation
+    - Better mod compatibility
+    - Consistent user experience
+    - Reliable performance
+  </Card>
+</CardGroup>
+
+## Core design principles
+
+Geode has been built with four key principles in mind:
+
+1. **Performance**: Efficient mod and hook management that doesn't slow down your game
+2. **Compatibility**: End mod conflicts and ensure mods work together seamlessly
+3. **Portability**: Cross-platform support for broader mod distribution
+4. **Ease of use**: Simple APIs and tools for both developers and users
+
+## Ready to get started?
+
+<CardGroup cols={2}>
+  <Card title="Getting started" icon="rocket" href="/getting-started">
+    Set up your development environment and create your first mod
+  </Card>
+  
+  <Card title="Handbook" icon="book" href="/handbook/chap0">
+    Follow our beginner-friendly tutorial series
+  </Card>
+</CardGroup>
