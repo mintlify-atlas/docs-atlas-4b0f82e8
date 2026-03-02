@@ -1,0 +1,185 @@
+{
+  "projectType": "sdk-library",
+  "projectName": "Geode SDK",
+  "projectDescription": "A modern mod loader and SDK for Geometry Dash with focus on compatibility, portability, and developer experience",
+  "theme": "aspen",
+  "primaryColor": "#3b82f6",
+  "lightColor": "#60a5fa",
+  "darkColor": "#1e40af",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "introduction",
+              "why-geode"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/prerequisites",
+              "getting-started/geode-cli",
+              "getting-started/sdk",
+              "getting-started/create-mod",
+              "getting-started/ide-setup",
+              "getting-started/cpp-stuff",
+              "getting-started/what-next"
+            ]
+          },
+          {
+            "group": "Tutorials",
+            "pages": [
+              "tutorials/overview",
+              "tutorials/modify",
+              "tutorials/buttons",
+              "tutorials/fields",
+              "tutorials/events",
+              "tutorials/logging",
+              "tutorials/popup",
+              "tutorials/layouts",
+              "tutorials/positioning",
+              "tutorials/nodetree",
+              "tutorials/image-loading",
+              "tutorials/fetch",
+              "tutorials/async",
+              "tutorials/tasks",
+              "tutorials/coroutines",
+              "tutorials/memory",
+              "tutorials/casting",
+              "tutorials/utils",
+              "tutorials/hookpriority",
+              "tutorials/touchpriority",
+              "tutorials/manualhooks"
+            ]
+          },
+          {
+            "group": "Mods",
+            "pages": [
+              "mods/overview",
+              "mods/configuring",
+              "mods/settings",
+              "mods/dependencies",
+              "mods/resources",
+              "mods/savedata",
+              "mods/md-files",
+              "mods/publishing",
+              "mods/guidelines"
+            ]
+          },
+          {
+            "group": "Migration Guides",
+            "pages": [
+              "migration/overview",
+              "migration/migrate-v4",
+              "migration/migrate-v5",
+              "migration/migrating",
+              "migration/modify-geode"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/dictionary"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Handbook",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": [
+              "handbook/overview",
+              "handbook/chap0"
+            ]
+          },
+          {
+            "group": "Volume 1: Basics",
+            "pages": [
+              "handbook/vol1/overview",
+              "handbook/vol1/chap1_1",
+              "handbook/vol1/chap1_2",
+              "handbook/vol1/chap1_3",
+              "handbook/vol1/chap1_4",
+              "handbook/vol1/chap1_5",
+              "handbook/vol1/chap1_6",
+              "handbook/vol1/chap1_7"
+            ]
+          },
+          {
+            "group": "Volume 2: Intermediate",
+            "pages": [
+              "handbook/vol2/overview",
+              "handbook/vol2/chap2_1",
+              "handbook/vol2/chap2_2",
+              "handbook/vol2/chap2_3",
+              "handbook/vol2/chap2_4",
+              "handbook/vol2/chap2_5",
+              "handbook/vol2/chap2_6"
+            ]
+          },
+          {
+            "group": "Volume 4: Advanced",
+            "pages": [
+              "handbook/vol4/overview"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "C++ Resources",
+        "groups": [
+          {
+            "group": "C++ Tutorials",
+            "pages": [
+              "cpp/overview",
+              "cpp/declarations",
+              "cpp/tips"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Miscellaneous",
+        "groups": [
+          {
+            "group": "Platform-Specific",
+            "pages": [
+              "misc/ios"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Modern C++ hooking system with clean $modify syntax",
+    "Cross-platform mod compatibility (Windows, macOS, Android, iOS)",
+    "Built-in settings, events, and resource management",
+    "Powerful CLI for project scaffolding and building",
+    "Mod dependency resolution and version management",
+    "Standardized UI components and layouts",
+    "Async/await support with tasks and coroutines",
+    "Comprehensive logging and debugging utilities"
+  ],
+  "publicApiSurface": [
+    "$modify macro for hooking classes",
+    "Event system (Event, EventListener, EventFilter)",
+    "Settings API via mod.json",
+    "Mod class for mod lifecycle",
+    "Logger for structured logging",
+    "Task and Result types for async operations",
+    "UI utilities (Popup, Layout, positioning)",
+    "Fields system for adding members to classes",
+    "geode::cocos namespace for Cocos2d-x integration",
+    "Web request utilities (fetch, async downloads)",
+    "Memory management utilities",
+    "Node IDs and tree traversal",
+    "CLI commands (new, build, install, package, publish)"
+  ]
+}
